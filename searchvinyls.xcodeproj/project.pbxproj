@@ -14,6 +14,9 @@
 		0B82F6EF1AE0286D00EFA198 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B82F6EE1AE0286D00EFA198 /* Images.xcassets */; };
 		0B82F6F21AE0286D00EFA198 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B82F6F01AE0286D00EFA198 /* LaunchScreen.xib */; };
 		0B82F6FE1AE0286D00EFA198 /* searchvinylsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F6FD1AE0286D00EFA198 /* searchvinylsTests.m */; };
+		0B82F70C1AE030E500EFA198 /* SearchVinylsAPICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F70B1AE030E500EFA198 /* SearchVinylsAPICommunicator.m */; };
+		0B82F7141AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F7131AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m */; };
+		0B82F7161AE034D000EFA198 /* SearchVinylsAPICommunicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F7151AE034D000EFA198 /* SearchVinylsAPICommunicatorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		0B82F6F71AE0286D00EFA198 /* searchvinylsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = searchvinylsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B82F6FC1AE0286D00EFA198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B82F6FD1AE0286D00EFA198 /* searchvinylsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = searchvinylsTests.m; sourceTree = "<group>"; };
+		0B82F70A1AE030E500EFA198 /* SearchVinylsAPICommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVinylsAPICommunicator.h; sourceTree = "<group>"; };
+		0B82F70B1AE030E500EFA198 /* SearchVinylsAPICommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVinylsAPICommunicator.m; sourceTree = "<group>"; };
+		0B82F7121AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectableSearchVinylsAPICommunicator.h; sourceTree = "<group>"; };
+		0B82F7131AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectableSearchVinylsAPICommunicator.m; sourceTree = "<group>"; };
+		0B82F7151AE034D000EFA198 /* SearchVinylsAPICommunicatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVinylsAPICommunicatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +89,11 @@
 		0B82F6E01AE0286D00EFA198 /* searchvinyls */ = {
 			isa = PBXGroup;
 			children = (
+				0B82F7091AE030A800EFA198 /* ViewController */,
+				0B82F7081AE0309D00EFA198 /* Model */,
+				0B82F7071AE0308E00EFA198 /* Network */,
 				0B82F6E51AE0286D00EFA198 /* AppDelegate.h */,
 				0B82F6E61AE0286D00EFA198 /* AppDelegate.m */,
-				0B82F6E81AE0286D00EFA198 /* ViewController.h */,
-				0B82F6E91AE0286D00EFA198 /* ViewController.m */,
 				0B82F6EB1AE0286D00EFA198 /* Main.storyboard */,
 				0B82F6EE1AE0286D00EFA198 /* Images.xcassets */,
 				0B82F6F01AE0286D00EFA198 /* LaunchScreen.xib */,
@@ -105,7 +114,9 @@
 		0B82F6FA1AE0286D00EFA198 /* searchvinylsTests */ = {
 			isa = PBXGroup;
 			children = (
+				0B82F70F1AE0347300EFA198 /* Inspectables */,
 				0B82F6FD1AE0286D00EFA198 /* searchvinylsTests.m */,
+				0B82F7151AE034D000EFA198 /* SearchVinylsAPICommunicatorTests.m */,
 				0B82F6FB1AE0286D00EFA198 /* Supporting Files */,
 			);
 			path = searchvinylsTests;
@@ -117,6 +128,40 @@
 				0B82F6FC1AE0286D00EFA198 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B82F7071AE0308E00EFA198 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0B82F70A1AE030E500EFA198 /* SearchVinylsAPICommunicator.h */,
+				0B82F70B1AE030E500EFA198 /* SearchVinylsAPICommunicator.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		0B82F7081AE0309D00EFA198 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0B82F7091AE030A800EFA198 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0B82F6E81AE0286D00EFA198 /* ViewController.h */,
+				0B82F6E91AE0286D00EFA198 /* ViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		0B82F70F1AE0347300EFA198 /* Inspectables */ = {
+			isa = PBXGroup;
+			children = (
+				0B82F7121AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.h */,
+				0B82F7131AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m */,
+			);
+			name = Inspectables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +266,7 @@
 			files = (
 				0B82F6EA1AE0286D00EFA198 /* ViewController.m in Sources */,
 				0B82F6E71AE0286D00EFA198 /* AppDelegate.m in Sources */,
+				0B82F70C1AE030E500EFA198 /* SearchVinylsAPICommunicator.m in Sources */,
 				0B82F6E41AE0286D00EFA198 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B82F6FE1AE0286D00EFA198 /* searchvinylsTests.m in Sources */,
+				0B82F7161AE034D000EFA198 /* SearchVinylsAPICommunicatorTests.m in Sources */,
+				0B82F7141AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +464,7 @@
 				0B82F7031AE0286D00EFA198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B82F7041AE0286D00EFA198 /* Build configuration list for PBXNativeTarget "searchvinylsTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +473,7 @@
 				0B82F7061AE0286D00EFA198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
