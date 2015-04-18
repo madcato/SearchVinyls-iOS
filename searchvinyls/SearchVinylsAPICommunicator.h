@@ -19,9 +19,10 @@ typedef void(^CompletionBlock)(NSArray* response);
 typedef void(^ErrorBlock)(NSError* error);
 
 @interface SearchVinylsAPICommunicator : NSObject {
-@protected
     NSURL* fetchedURL;
 }
+
+@property (nonatomic, strong) NSArray* responseData;
 
 -(void)searchFor:(NSString*)query onSuccess:(CompletionBlock)compBlock onError:(ErrorBlock)errorBlock;
 -(void)getMostWanted:(CompletionBlock)compBlock onError:(ErrorBlock)errorBlock;

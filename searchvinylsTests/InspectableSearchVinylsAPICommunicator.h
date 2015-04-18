@@ -12,4 +12,6 @@
 
 -(NSString*)fetchedURL;
 
+@property (nonatomic,strong) NSString* expectedResponse;
+
 @end
