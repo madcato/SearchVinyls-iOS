@@ -7,8 +7,16 @@
 //
 
 #import "ViewController.h"
+#import "MostWantedTableViewController.h"
+#import "ResultsTableViewController.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    MostWantedTableViewController* _mostWantedController;
+}
+
+@property (strong, nonatomic) IBOutlet UITextField *inputField;
+
+@property (strong, nonatomic) IBOutlet UIView *positionForTV;
 
 @end
 
@@ -16,12 +24,46 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.inputField.alpha = 0.0;
+    
+    self.title = @"Search";
+    [self.navigationController setNavigationBarHidden:YES];
+
+    _mostWantedController = [self.storyboard instantiateViewControllerWithIdentifier:@"MostWantedTableViewController"];
+    [self addChildViewController:_mostWantedController];
+    _mostWantedController.view.frame = self.positionForTV.frame;
+    [self.view addSubview:_mostWantedController.view];
+    [_mostWantedController didMoveToParentViewController:self];
 }
 
-- (void)didReceiveMemoryWarning {
+-(void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+    [UIView animateWithDuration:0.8 animations:^{
+        self.inputField.alpha = 1.0;
+    } completion:^(BOOL finished) {
+        self.inputField.alpha = 1.0;
+    }];
+}
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UITextField delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    // Launch search and result controller
+    ResultsTableViewController* controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ResultsTableViewController"];
+    controller.textToSearch = self.inputField.text;
+    [self.navigationController pushViewController:controller animated:YES];
+    
+    return YES;
 }
 
 @end

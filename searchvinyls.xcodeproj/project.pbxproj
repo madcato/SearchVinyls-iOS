@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B6AAAAD1AE5689700100311 /* MostWantedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AAAAC1AE5689700100311 /* MostWantedTableViewController.m */; };
+		0B6AAAB01AE5747500100311 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AAAAF1AE5747500100311 /* ResultsTableViewController.m */; };
 		0B82F6E41AE0286D00EFA198 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F6E31AE0286D00EFA198 /* main.m */; };
 		0B82F6E71AE0286D00EFA198 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F6E61AE0286D00EFA198 /* AppDelegate.m */; };
 		0B82F6EA1AE0286D00EFA198 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F6E91AE0286D00EFA198 /* ViewController.m */; };
@@ -30,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B6AAAAB1AE5689700100311 /* MostWantedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostWantedTableViewController.h; sourceTree = "<group>"; };
+		0B6AAAAC1AE5689700100311 /* MostWantedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostWantedTableViewController.m; sourceTree = "<group>"; };
+		0B6AAAAE1AE5747500100311 /* ResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewController.h; sourceTree = "<group>"; };
+		0B6AAAAF1AE5747500100311 /* ResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewController.m; sourceTree = "<group>"; };
 		0B82F6DE1AE0286D00EFA198 /* searchvinyls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = searchvinyls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B82F6E21AE0286D00EFA198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B82F6E31AE0286D00EFA198 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -89,7 +95,7 @@
 		0B82F6E01AE0286D00EFA198 /* searchvinyls */ = {
 			isa = PBXGroup;
 			children = (
-				0B82F7091AE030A800EFA198 /* ViewController */,
+				0B82F7091AE030A800EFA198 /* ViewControllers */,
 				0B82F7081AE0309D00EFA198 /* Model */,
 				0B82F7071AE0308E00EFA198 /* Network */,
 				0B82F6E51AE0286D00EFA198 /* AppDelegate.h */,
@@ -146,13 +152,17 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
-		0B82F7091AE030A800EFA198 /* ViewController */ = {
+		0B82F7091AE030A800EFA198 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				0B82F6E81AE0286D00EFA198 /* ViewController.h */,
 				0B82F6E91AE0286D00EFA198 /* ViewController.m */,
+				0B6AAAAB1AE5689700100311 /* MostWantedTableViewController.h */,
+				0B6AAAAC1AE5689700100311 /* MostWantedTableViewController.m */,
+				0B6AAAAE1AE5747500100311 /* ResultsTableViewController.h */,
+				0B6AAAAF1AE5747500100311 /* ResultsTableViewController.m */,
 			);
-			name = ViewController;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		0B82F70F1AE0347300EFA198 /* Inspectables */ = {
@@ -266,7 +276,9 @@
 			files = (
 				0B82F6EA1AE0286D00EFA198 /* ViewController.m in Sources */,
 				0B82F6E71AE0286D00EFA198 /* AppDelegate.m in Sources */,
+				0B6AAAB01AE5747500100311 /* ResultsTableViewController.m in Sources */,
 				0B82F70C1AE030E500EFA198 /* SearchVinylsAPICommunicator.m in Sources */,
+				0B6AAAAD1AE5689700100311 /* MostWantedTableViewController.m in Sources */,
 				0B82F6E41AE0286D00EFA198 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
