@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3093C81AEAC18300464B0B /* ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3093C71AEAC18300464B0B /* ViewControllerTests.m */; };
+		0B3093D71AEAC90000464B0B /* serverCommunicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3093D61AEAC90000464B0B /* serverCommunicationTests.m */; };
+		0B3093DB1AEACA7500464B0B /* InspectableSearchVinylsAPICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F7131AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m */; };
+		0B3093DD1AEACA8400464B0B /* SearchVinylsAPICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F70B1AE030E500EFA198 /* SearchVinylsAPICommunicator.m */; };
 		0B6AAAAD1AE5689700100311 /* MostWantedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AAAAC1AE5689700100311 /* MostWantedTableViewController.m */; };
 		0B6AAAB01AE5747500100311 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AAAAF1AE5747500100311 /* ResultsTableViewController.m */; };
 		0B82F6E41AE0286D00EFA198 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F6E31AE0286D00EFA198 /* main.m */; };
@@ -32,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B3093C71AEAC18300464B0B /* ViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTests.m; sourceTree = "<group>"; };
+		0B3093D21AEAC8FF00464B0B /* serverCommunicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = serverCommunicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B3093D51AEAC90000464B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B3093D61AEAC90000464B0B /* serverCommunicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = serverCommunicationTests.m; sourceTree = "<group>"; };
 		0B6AAAAB1AE5689700100311 /* MostWantedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostWantedTableViewController.h; sourceTree = "<group>"; };
 		0B6AAAAC1AE5689700100311 /* MostWantedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostWantedTableViewController.m; sourceTree = "<group>"; };
 		0B6AAAAE1AE5747500100311 /* ResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewController.h; sourceTree = "<group>"; };
@@ -57,6 +65,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B3093CF1AEAC8FF00464B0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B82F6DB1AE0286D00EFA198 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -74,11 +89,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B3093D31AEAC8FF00464B0B /* serverCommunicationTests */ = {
+			isa = PBXGroup;
+			children = (
+				0B3093D61AEAC90000464B0B /* serverCommunicationTests.m */,
+				0B3093D41AEAC8FF00464B0B /* Supporting Files */,
+			);
+			path = serverCommunicationTests;
+			sourceTree = "<group>";
+		};
+		0B3093D41AEAC8FF00464B0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B3093D51AEAC90000464B0B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		0B82F6D51AE0286D00EFA198 = {
 			isa = PBXGroup;
 			children = (
 				0B82F6E01AE0286D00EFA198 /* searchvinyls */,
 				0B82F6FA1AE0286D00EFA198 /* searchvinylsTests */,
+				0B3093D31AEAC8FF00464B0B /* serverCommunicationTests */,
 				0B82F6DF1AE0286D00EFA198 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +121,7 @@
 			children = (
 				0B82F6DE1AE0286D00EFA198 /* searchvinyls.app */,
 				0B82F6F71AE0286D00EFA198 /* searchvinylsTests.xctest */,
+				0B3093D21AEAC8FF00464B0B /* serverCommunicationTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +157,7 @@
 				0B82F70F1AE0347300EFA198 /* Inspectables */,
 				0B82F6FD1AE0286D00EFA198 /* searchvinylsTests.m */,
 				0B82F7151AE034D000EFA198 /* SearchVinylsAPICommunicatorTests.m */,
+				0B3093C71AEAC18300464B0B /* ViewControllerTests.m */,
 				0B82F6FB1AE0286D00EFA198 /* Supporting Files */,
 			);
 			path = searchvinylsTests;
@@ -177,6 +212,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0B3093D11AEAC8FF00464B0B /* serverCommunicationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B3093D81AEAC90000464B0B /* Build configuration list for PBXNativeTarget "serverCommunicationTests" */;
+			buildPhases = (
+				0B3093CE1AEAC8FF00464B0B /* Sources */,
+				0B3093CF1AEAC8FF00464B0B /* Frameworks */,
+				0B3093D01AEAC8FF00464B0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = serverCommunicationTests;
+			productName = serverCommunicationTests;
+			productReference = 0B3093D21AEAC8FF00464B0B /* serverCommunicationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		0B82F6DD1AE0286D00EFA198 /* searchvinyls */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B82F7011AE0286D00EFA198 /* Build configuration list for PBXNativeTarget "searchvinyls" */;
@@ -221,6 +273,9 @@
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = veladan;
 				TargetAttributes = {
+					0B3093D11AEAC8FF00464B0B = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
 					0B82F6DD1AE0286D00EFA198 = {
 						CreatedOnToolsVersion = 6.3;
 					};
@@ -245,11 +300,19 @@
 			targets = (
 				0B82F6DD1AE0286D00EFA198 /* searchvinyls */,
 				0B82F6F61AE0286D00EFA198 /* searchvinylsTests */,
+				0B3093D11AEAC8FF00464B0B /* serverCommunicationTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0B3093D01AEAC8FF00464B0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B82F6DC1AE0286D00EFA198 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -270,6 +333,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B3093CE1AEAC8FF00464B0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B3093D71AEAC90000464B0B /* serverCommunicationTests.m in Sources */,
+				0B3093DD1AEACA8400464B0B /* SearchVinylsAPICommunicator.m in Sources */,
+				0B3093DB1AEACA7500464B0B /* InspectableSearchVinylsAPICommunicator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0B82F6DA1AE0286D00EFA198 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +362,7 @@
 			files = (
 				0B82F6FE1AE0286D00EFA198 /* searchvinylsTests.m in Sources */,
 				0B82F7161AE034D000EFA198 /* SearchVinylsAPICommunicatorTests.m in Sources */,
+				0B3093C81AEAC18300464B0B /* ViewControllerTests.m in Sources */,
 				0B82F7141AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +397,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0B3093D91AEAC90000464B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = serverCommunicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0B3093DA1AEAC90000464B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = serverCommunicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		0B82F6FF1AE0286D00EFA198 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -460,6 +564,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B3093D81AEAC90000464B0B /* Build configuration list for PBXNativeTarget "serverCommunicationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B3093D91AEAC90000464B0B /* Debug */,
+				0B3093DA1AEAC90000464B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0B82F6D91AE0286D00EFA198 /* Build configuration list for PBXProject "searchvinyls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITextFieldDelegate>
+@class MostWantedTableViewController;
+
+@interface ViewController : UIViewController <UITextFieldDelegate> {
+@protected
+    MostWantedTableViewController* _mostWantedController;
+}
 
 
 @end

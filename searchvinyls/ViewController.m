@@ -10,9 +10,7 @@
 #import "MostWantedTableViewController.h"
 #import "ResultsTableViewController.h"
 
-@interface ViewController () {
-    MostWantedTableViewController* _mostWantedController;
-}
+@interface ViewController ()
 
 @property (strong, nonatomic) IBOutlet UITextField *inputField;
 
