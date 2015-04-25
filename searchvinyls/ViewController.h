@@ -15,6 +15,5 @@
     MostWantedTableViewController* _mostWantedController;
 }
 
-
 @end
 

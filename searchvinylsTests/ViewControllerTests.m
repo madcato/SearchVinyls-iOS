@@ -10,6 +10,7 @@
 #import <XCTest/XCTest.h>
 #import "ViewController.h"
 #import "AppDelegate.h"
+@import ObjectiveC;
 
 @interface ViewControllerTests : XCTestCase {
     ViewController* controller;
@@ -21,8 +22,7 @@
 
 - (void)setUp {
     [super setUp];
-    AppDelegate* delegate = (AppDelegate*)[[UIApplication sharedApplication] delegate];
-    controller = (ViewController*)delegate.window.rootViewController;
+    controller = [[ViewController alloc] init];
 }
 
 - (void)tearDown {
@@ -31,9 +31,22 @@
 }
 
 - (void)testViewDidLoad {
-    XCTAssertNotNil(controller,@"ViewController was not instantiated");
+    XCTAssertNotNil(controller,@"ViewController was not created");
 }
 
+- (void)testViewControllerHasATableViewProperty {
+    Ivar tableViewProperty = class_getInstanceVariable([controller class], "_mostWantedController");
+    XCTAssertTrue(tableViewProperty != NULL, @"ViewController needs a table view");
+}
 
+- (void)testViewControllerHasAInputFieldProperty {
+    objc_property_t property = class_getProperty([controller class], "inputField");
+    XCTAssertTrue(property != NULL, @"ViewController needs a input field");
+}
+
+- (void)testViewControllerHasAPositionForTVProperty {
+    objc_property_t property = class_getProperty([controller class], "positionForTV");
+    XCTAssertTrue(property != NULL, @"ViewController needs a view for inserting the table of MostWantedTableViewController");
+}
 
 @end

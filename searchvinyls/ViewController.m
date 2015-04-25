@@ -13,7 +13,6 @@
 @interface ViewController ()
 
 @property (strong, nonatomic) IBOutlet UITextField *inputField;
-
 @property (strong, nonatomic) IBOutlet UIView *positionForTV;
 
 @end
