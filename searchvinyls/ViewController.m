@@ -36,7 +36,7 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.navigationController setNavigationBarHidden:YES];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
     [UIView animateWithDuration:0.8 animations:^{
         self.inputField.alpha = 1.0;
     } completion:^(BOOL finished) {

@@ -8,6 +8,7 @@
 
 #import "ResultsTableViewController.h"
 #import "SearchVinylsAPICommunicator.h"
+#import "ResultsCell.h"
 
 @interface ResultsTableViewController () {
     NSArray* _results;
@@ -28,7 +29,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     self.title = @"Results";
-    [self.navigationController setNavigationBarHidden:NO];
+    
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(launchSearch:) forControlEvents:UIControlEventValueChanged];
     
@@ -41,6 +42,7 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 -(void)launchSearch:(UIRefreshControl*)refreshControl
@@ -54,13 +56,13 @@
                 [rows addObject:[NSIndexPath indexPathForItem:i inSection:0]];
             }
             _results = nil;
-            [self.tableView deleteRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationAutomatic];
+            [self.tableView deleteRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationBottom];
             _results = array;
             rows = [NSMutableArray array];
             for (i = 0 ; i < [array count] ; i++) {
                 [rows addObject:[NSIndexPath indexPathForItem:i inSection:0]];
             }
-            [self.tableView insertRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationBottom];
+            [self.tableView insertRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationTop];
             [self.refreshControl endRefreshing];
         });
     } onError:^(NSError *error) {
@@ -86,9 +88,9 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ResultsCell" forIndexPath:indexPath];
+    ResultsCell *cell = (ResultsCell*)[tableView dequeueReusableCellWithIdentifier:@"ResultsCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = _results[indexPath.row][@"title"];
+    cell.label.text = _results[indexPath.row][@"title"];
     
     return cell;
 }

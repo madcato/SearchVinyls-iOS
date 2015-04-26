@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u9b-F9-s87">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u9b-F9-s87">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -64,16 +64,49 @@
         <scene sceneID="YdX-xu-Twp">
             <objects>
                 <tableViewController storyboardIdentifier="ResultsTableViewController" id="J6w-BA-dLZ" customClass="ResultsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JbA-1H-SBN">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="132" sectionHeaderHeight="22" sectionFooterHeight="22" id="JbA-1H-SBN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultsCell" id="Kql-fQ-hib">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ResultsCell" rowHeight="132" id="Kql-fQ-hib" customClass="ResultsCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kql-fQ-hib" id="hje-Gb-TbP">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4R3-WO-Yva">
+                                            <rect key="frame" x="8" y="8" width="115" height="115"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="115" id="FMA-8i-unW"/>
+                                                <constraint firstAttribute="width" constant="115" id="f21-hK-RlU"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXq-k4-MaA">
+                                            <rect key="frame" x="131" y="8" width="456" height="115"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="4R3-WO-Yva" firstAttribute="leading" secondItem="hje-Gb-TbP" secondAttribute="leadingMargin" id="6HJ-Qz-1ab"/>
+                                        <constraint firstItem="MXq-k4-MaA" firstAttribute="leading" secondItem="4R3-WO-Yva" secondAttribute="trailing" constant="8" id="7Bh-Wl-URZ"/>
+                                        <constraint firstItem="4R3-WO-Yva" firstAttribute="top" secondItem="hje-Gb-TbP" secondAttribute="topMargin" id="KnB-Ej-g2S"/>
+                                        <constraint firstItem="MXq-k4-MaA" firstAttribute="bottom" secondItem="hje-Gb-TbP" secondAttribute="bottomMargin" id="YcA-JZ-GEG"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="MXq-k4-MaA" secondAttribute="trailing" constant="5" id="eu4-SK-7Px"/>
+                                        <constraint firstItem="MXq-k4-MaA" firstAttribute="top" secondItem="hje-Gb-TbP" secondAttribute="topMargin" id="yJa-QS-pDI"/>
+                                        <constraint firstItem="4R3-WO-Yva" firstAttribute="bottom" secondItem="hje-Gb-TbP" secondAttribute="bottomMargin" id="ygs-I3-lsR"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="ygs-I3-lsR"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="image" destination="hje-Gb-TbP" id="bGj-qc-fSn"/>
+                                    <outlet property="label" destination="MXq-k4-MaA" id="CFp-6y-Hha"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -133,5 +166,6 @@
     </scenes>
     <resources>
         <image name="launch" width="640" height="1136"/>
+        <image name="placeholder" width="115" height="115"/>
     </resources>
 </document>
