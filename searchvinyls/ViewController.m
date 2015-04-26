@@ -38,11 +38,14 @@
     } completion:^(BOOL finished) {
         self.inputField.alpha = 1.0;
     }];
-    _mostWantedController = [self.storyboard instantiateViewControllerWithIdentifier:@"MostWantedTableViewController"];
-    [self addChildViewController:_mostWantedController];
-    _mostWantedController.view.frame = self.positionForTV.frame;
-    [self.view addSubview:_mostWantedController.view];
-    [_mostWantedController didMoveToParentViewController:self];
+    
+    if (_mostWantedController == nil) {
+        _mostWantedController = [self.storyboard instantiateViewControllerWithIdentifier:@"MostWantedTableViewController"];
+        [self addChildViewController:_mostWantedController];
+        _mostWantedController.view.frame = self.positionForTV.frame;
+        [self.view addSubview:_mostWantedController.view];
+        [_mostWantedController didMoveToParentViewController:self];
+    }
 }
 
 - (void)didReceiveMemoryWarning
