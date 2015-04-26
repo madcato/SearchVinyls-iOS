@@ -52,6 +52,16 @@
                ReferencedContainer = "container:searchvinyls.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0B3093D11AEAC8FF00464B0B"
+               BuildableName = "serverCommunicationTests.xctest"
+               BlueprintName = "serverCommunicationTests"
+               ReferencedContainer = "container:searchvinyls.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

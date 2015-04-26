@@ -1,0 +1,3 @@
+[submodule "search-vinyls-test-server"]
+	path = search-vinyls-test-server
+	url = ./search-vinyls-test-server/
