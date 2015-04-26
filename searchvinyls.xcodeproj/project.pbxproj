@@ -11,6 +11,7 @@
 		0B3093D71AEAC90000464B0B /* serverCommunicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3093D61AEAC90000464B0B /* serverCommunicationTests.m */; };
 		0B3093DB1AEACA7500464B0B /* InspectableSearchVinylsAPICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F7131AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m */; };
 		0B3093DD1AEACA8400464B0B /* SearchVinylsAPICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F70B1AE030E500EFA198 /* SearchVinylsAPICommunicator.m */; };
+		0B3093E01AECD79400464B0B /* ResultsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3093DF1AECD79400464B0B /* ResultsCell.m */; };
 		0B6AAAAD1AE5689700100311 /* MostWantedTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AAAAC1AE5689700100311 /* MostWantedTableViewController.m */; };
 		0B6AAAB01AE5747500100311 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AAAAF1AE5747500100311 /* ResultsTableViewController.m */; };
 		0B82F6E41AE0286D00EFA198 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F6E31AE0286D00EFA198 /* main.m */; };
@@ -40,6 +41,8 @@
 		0B3093D21AEAC8FF00464B0B /* serverCommunicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = serverCommunicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3093D51AEAC90000464B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B3093D61AEAC90000464B0B /* serverCommunicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = serverCommunicationTests.m; sourceTree = "<group>"; };
+		0B3093DE1AECD79400464B0B /* ResultsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsCell.h; sourceTree = "<group>"; };
+		0B3093DF1AECD79400464B0B /* ResultsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsCell.m; sourceTree = "<group>"; };
 		0B6AAAAB1AE5689700100311 /* MostWantedTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostWantedTableViewController.h; sourceTree = "<group>"; };
 		0B6AAAAC1AE5689700100311 /* MostWantedTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostWantedTableViewController.m; sourceTree = "<group>"; };
 		0B6AAAAE1AE5747500100311 /* ResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewController.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				0B6AAAAC1AE5689700100311 /* MostWantedTableViewController.m */,
 				0B6AAAAE1AE5747500100311 /* ResultsTableViewController.h */,
 				0B6AAAAF1AE5747500100311 /* ResultsTableViewController.m */,
+				0B3093DE1AECD79400464B0B /* ResultsCell.h */,
+				0B3093DF1AECD79400464B0B /* ResultsCell.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -349,6 +354,7 @@
 			files = (
 				0B82F6EA1AE0286D00EFA198 /* ViewController.m in Sources */,
 				0B82F6E71AE0286D00EFA198 /* AppDelegate.m in Sources */,
+				0B3093E01AECD79400464B0B /* ResultsCell.m in Sources */,
 				0B6AAAB01AE5747500100311 /* ResultsTableViewController.m in Sources */,
 				0B82F70C1AE030E500EFA198 /* SearchVinylsAPICommunicator.m in Sources */,
 				0B6AAAAD1AE5689700100311 /* MostWantedTableViewController.m in Sources */,

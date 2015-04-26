@@ -8,7 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#define SERVER_ADDRESS @"http://searchvinyls.appspot.com"
+
+// Production
+//#define SERVER_ADDRESS @"http://searchvinyls.appspot.com"
+
+#define SERVER_ADDRESS @"http://localhost:3000"
 
 #define API_PATH @"api"
 

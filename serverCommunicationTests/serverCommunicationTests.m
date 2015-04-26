@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "InspectableSearchVinylsAPICommunicator.h"
+#import "SearchVinylsAPICommunicator.h"
 
 @interface serverCommunicationTests : XCTestCase {
-    InspectableSearchVinylsAPICommunicator* communicator;
+    SearchVinylsAPICommunicator* communicator;
 }
 
 @end
@@ -20,7 +20,7 @@
 
 - (void)setUp {
     [super setUp];
-    communicator = [[InspectableSearchVinylsAPICommunicator alloc] init];
+    communicator = [[SearchVinylsAPICommunicator alloc] init];
 }
 
 - (void)tearDown {
@@ -38,9 +38,8 @@
         XCTAssert(false, @"Not tested. Check connection and relaunch tests");
         [expectation fulfill];
     }];
-    XCTAssertEqualObjects([communicator fetchedURL], @"http://searchvinyls.appspot.com/api/search?c=queen", @"Wrong fetched URL");
-    
-    
+   
+
     [self waitForExpectationsWithTimeout:10
                                  handler:^(NSError *error) {
                                      // handler is called on _either_ success or failure

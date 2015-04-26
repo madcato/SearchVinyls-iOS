@@ -33,12 +33,16 @@ static const NSString* kMostWantedResponseStr = @"{\"items\": [{\"item\": \"Los 
 
 - (void)testSearchUrl {
     [communicator searchFor:@"queen" onSuccess:nil onError:nil];
-    XCTAssertEqualObjects([communicator fetchedURL], @"http://searchvinyls.appspot.com/api/search?c=queen", @"Wrong fetched URL");
+//    XCTAssertEqualObjects([communicator fetchedURL], @"http://searchvinyls.appspot.com/api/search?c=queen", @"Wrong fetched URL");
+
+    XCTAssertEqualObjects([communicator fetchedURL], @"http://localhost:3000/api/search?c=queen", @"Wrong fetched URL");
 }
 
 - (void)testMostWantedUrl {
     [communicator getMostWanted:nil onError:nil];
-    XCTAssertEqualObjects([communicator fetchedURL], @"http://searchvinyls.appspot.com/api/mostwanted?", @"Wrong fetched URL");
+//    XCTAssertEqualObjects([communicator fetchedURL], @"http://searchvinyls.appspot.com/api/mostwanted?", @"Wrong fetched URL");
+    
+        XCTAssertEqualObjects([communicator fetchedURL], @"http://localhost:3000/api/mostwanted?", @"Wrong fetched URL");
 }
 
 - (void)testSearchUrlResponse {
