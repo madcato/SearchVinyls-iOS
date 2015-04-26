@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14E7f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="u9b-F9-s87">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -36,15 +35,25 @@
                                 <rect key="frame" x="0.0" y="337" width="600" height="263"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wXf-Ak-6Mj">
+                                <rect key="frame" x="0.0" y="335" width="600" height="2"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="nxl-p8-1KI"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="zBP-0e-ivP" secondAttribute="trailing" constant="-16" id="6Up-n7-JOU"/>
                             <constraint firstItem="wiv-tJ-sVh" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="9py-M4-csY"/>
                             <constraint firstAttribute="centerY" secondItem="RkV-4X-sBB" secondAttribute="centerY" id="ADb-Gd-flo"/>
+                            <constraint firstItem="wXf-Ak-6Mj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="AWd-S8-EoF"/>
                             <constraint firstItem="wiv-tJ-sVh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="IpD-9G-CWv"/>
+                            <constraint firstItem="wXf-Ak-6Mj" firstAttribute="top" secondItem="RkV-4X-sBB" secondAttribute="bottom" constant="20" id="MNk-9l-EFc"/>
                             <constraint firstItem="zBP-0e-ivP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Y6z-H3-dGK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="wiv-tJ-sVh" secondAttribute="trailing" id="YX1-Qi-KL6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wXf-Ak-6Mj" secondAttribute="trailing" constant="-16" id="ZVx-LR-QEx"/>
                             <constraint firstItem="zBP-0e-ivP" firstAttribute="top" secondItem="RkV-4X-sBB" secondAttribute="bottom" constant="22" id="orx-ZL-v0G"/>
                             <constraint firstAttribute="centerX" secondItem="RkV-4X-sBB" secondAttribute="centerX" id="rbc-Rq-xdU"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="zBP-0e-ivP" secondAttribute="bottom" id="zRl-RK-2Ul"/>
