@@ -534,6 +534,7 @@
 					"${SRCROOT}/SDWebImage",
 				);
 				INFOPLIST_FILE = searchvinyls/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "";
@@ -545,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Daniel Vela (TW65EXAM4U)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/danielvela/Downloads,
@@ -556,10 +558,12 @@
 					"${SRCROOT}/SDWebImage",
 				);
 				INFOPLIST_FILE = searchvinyls/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "b5303aca-08f0-49f6-839a-b690a0275fe9";
 			};
 			name = Release;
 		};

@@ -26,11 +26,7 @@
     self.title = @"Search";
     [self.navigationController setNavigationBarHidden:YES];
 
-    _mostWantedController = [self.storyboard instantiateViewControllerWithIdentifier:@"MostWantedTableViewController"];
-    [self addChildViewController:_mostWantedController];
-    _mostWantedController.view.frame = self.positionForTV.frame;
-    [self.view addSubview:_mostWantedController.view];
-    [_mostWantedController didMoveToParentViewController:self];
+    
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -42,6 +38,11 @@
     } completion:^(BOOL finished) {
         self.inputField.alpha = 1.0;
     }];
+    _mostWantedController = [self.storyboard instantiateViewControllerWithIdentifier:@"MostWantedTableViewController"];
+    [self addChildViewController:_mostWantedController];
+    _mostWantedController.view.frame = self.positionForTV.frame;
+    [self.view addSubview:_mostWantedController.view];
+    [_mostWantedController didMoveToParentViewController:self];
 }
 
 - (void)didReceiveMemoryWarning

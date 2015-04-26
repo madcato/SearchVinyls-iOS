@@ -8,6 +8,7 @@
 
 #import "MostWantedTableViewController.h"
 #import "SearchVinylsAPICommunicator.h"
+#import "ResultsTableViewController.h"
 
 @interface MostWantedTableViewController () {
     NSArray* _mostWantedItems;
@@ -95,6 +96,12 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ResultsTableViewController* controller = [self.storyboard instantiateViewControllerWithIdentifier:@"ResultsTableViewController"];
+    controller.textToSearch = _mostWantedItems[indexPath.row][@"item"];
+    [self.navigationController pushViewController:controller animated:YES];
+}
 
 /*
 // Override to support conditional editing of the table view.

@@ -10,9 +10,10 @@
 
 
 // Production
-//#define SERVER_ADDRESS @"http://searchvinyls.appspot.com"
+#define SERVER_ADDRESS @"http://searchvinyls.appspot.com"
 
-#define SERVER_ADDRESS @"http://localhost:3000"
+// Development
+// #define SERVER_ADDRESS @"http://localhost:3000"
 
 #define API_PATH @"api"
 
