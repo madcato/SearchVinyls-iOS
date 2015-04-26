@@ -74,7 +74,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kql-fQ-hib" id="hje-Gb-TbP">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4R3-WO-Yva">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="4R3-WO-Yva">
                                             <rect key="frame" x="8" y="8" width="115" height="115"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="115" id="FMA-8i-unW"/>
@@ -104,7 +104,7 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="image" destination="hje-Gb-TbP" id="bGj-qc-fSn"/>
+                                    <outlet property="image" destination="4R3-WO-Yva" id="nHV-pk-bLZ"/>
                                     <outlet property="label" destination="MXq-k4-MaA" id="CFp-6y-Hha"/>
                                 </connections>
                             </tableViewCell>

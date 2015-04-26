@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B27DE761AECE93A008FC4B0 /* UIImageView+Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B27DE751AECE93A008FC4B0 /* UIImageView+Downloader.m */; };
 		0B3093C81AEAC18300464B0B /* ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3093C71AEAC18300464B0B /* ViewControllerTests.m */; };
 		0B3093D71AEAC90000464B0B /* serverCommunicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3093D61AEAC90000464B0B /* serverCommunicationTests.m */; };
 		0B3093DB1AEACA7500464B0B /* InspectableSearchVinylsAPICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F7131AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B27DE741AECE93A008FC4B0 /* UIImageView+Downloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Downloader.h"; sourceTree = "<group>"; };
+		0B27DE751AECE93A008FC4B0 /* UIImageView+Downloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Downloader.m"; sourceTree = "<group>"; };
 		0B3093C71AEAC18300464B0B /* ViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTests.m; sourceTree = "<group>"; };
 		0B3093D21AEAC8FF00464B0B /* serverCommunicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = serverCommunicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3093D51AEAC90000464B0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 			children = (
 				0B82F70A1AE030E500EFA198 /* SearchVinylsAPICommunicator.h */,
 				0B82F70B1AE030E500EFA198 /* SearchVinylsAPICommunicator.m */,
+				0B27DE741AECE93A008FC4B0 /* UIImageView+Downloader.h */,
+				0B27DE751AECE93A008FC4B0 /* UIImageView+Downloader.m */,
 			);
 			name = Network;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B82F6EA1AE0286D00EFA198 /* ViewController.m in Sources */,
+				0B27DE761AECE93A008FC4B0 /* UIImageView+Downloader.m in Sources */,
 				0B82F6E71AE0286D00EFA198 /* AppDelegate.m in Sources */,
 				0B3093E01AECD79400464B0B /* ResultsCell.m in Sources */,
 				0B6AAAB01AE5747500100311 /* ResultsTableViewController.m in Sources */,
@@ -517,8 +523,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/danielvela/Downloads,
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SRCROOT}/SDWebImage",
+				);
 				INFOPLIST_FILE = searchvinyls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -527,8 +545,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/danielvela/Downloads,
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"${SRCROOT}/SDWebImage",
+				);
 				INFOPLIST_FILE = searchvinyls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -577,6 +607,7 @@
 				0B3093DA1AEAC90000464B0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B82F6D91AE0286D00EFA198 /* Build configuration list for PBXProject "searchvinyls" */ = {
 			isa = XCConfigurationList;

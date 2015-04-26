@@ -9,6 +9,7 @@
 #import "ResultsTableViewController.h"
 #import "SearchVinylsAPICommunicator.h"
 #import "ResultsCell.h"
+#import "UIImageView+Downloader.h"
 
 @interface ResultsTableViewController () {
     NSArray* _results;
@@ -92,6 +93,9 @@
     
     cell.label.text = _results[indexPath.row][@"title"];
     
+    cell.image.tag = indexPath.row;
+    [cell.image setImageFrom:_results[indexPath.row][@"image"] withTag:cell.image.tag];
+
     return cell;
 }
 
