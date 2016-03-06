@@ -1,8 +1,8 @@
 language: objective-c
 osx_image: xcode7.2
-xcode_project: OSLibrary.xcodeproj
-xcode_scheme: OSLibrary
+xcode_project: searchvinyls.xcodeproj
+xcode_scheme: searchvinyls
 script:
-  - xctool -project OSLibrary.xcodeproj -scheme OSLibrary build test -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
+  - xctool -project searchvinyls.xcodeproj -scheme searchvinyls build test -sdk iphonesimulator GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES
 after_success:
 - bash <(curl -s https://codecov.io/bash)
