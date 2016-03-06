@@ -1,6 +1,7 @@
 
 [![Build Status](https://travis-ci.org/madcato/SearchVinyls-iOS.svg?branch=master)](https://travis-ci.org/madcato/SearchVinyls-iOS)
 [![codecov.io](https://codecov.io/github/madcato/SearchVinyls-iOS/coverage.svg?branch=master)](https://codecov.io/github/madcato/SearchVinyls-iOS?branch=master)
+[![License](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/madcato/SearchVinyls-iOS/blob/master/MIT-LICENSE.txt)
 
 # SearchVinyls-iOS
 
