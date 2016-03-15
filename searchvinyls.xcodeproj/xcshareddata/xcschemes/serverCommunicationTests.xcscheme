@@ -9,37 +9,9 @@
          <BuildActionEntry
             buildForTesting = "YES"
             buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
             buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0B82F6DD1AE0286D00EFA198"
-               BuildableName = "searchvinyls.app"
-               BlueprintName = "searchvinyls"
-               ReferencedContainer = "container:searchvinyls.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0B82F6F61AE0286D00EFA198"
-               BuildableName = "searchvinylsTests.xctest"
-               BlueprintName = "searchvinylsTests"
-               ReferencedContainer = "container:searchvinyls.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "NO"
-            buildForRunning = "NO"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0B3093D11AEAC8FF00464B0B"
@@ -60,19 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0B82F6F61AE0286D00EFA198"
-               BuildableName = "searchvinylsTests.xctest"
-               BlueprintName = "searchvinylsTests"
-               ReferencedContainer = "container:searchvinyls.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0BFD38291C9873DA00C596D3"
-               BuildableName = "searchvinylsUITests.xctest"
-               BlueprintName = "searchvinylsUITests"
+               BlueprintIdentifier = "0B3093D11AEAC8FF00464B0B"
+               BuildableName = "serverCommunicationTests.xctest"
+               BlueprintName = "serverCommunicationTests"
                ReferencedContainer = "container:searchvinyls.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -80,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0B82F6DD1AE0286D00EFA198"
-            BuildableName = "searchvinyls.app"
-            BlueprintName = "searchvinyls"
+            BlueprintIdentifier = "0B3093D11AEAC8FF00464B0B"
+            BuildableName = "serverCommunicationTests.xctest"
+            BlueprintName = "serverCommunicationTests"
             ReferencedContainer = "container:searchvinyls.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -99,16 +61,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0B82F6DD1AE0286D00EFA198"
-            BuildableName = "searchvinyls.app"
-            BlueprintName = "searchvinyls"
+            BlueprintIdentifier = "0B3093D11AEAC8FF00464B0B"
+            BuildableName = "serverCommunicationTests.xctest"
+            BlueprintName = "serverCommunicationTests"
             ReferencedContainer = "container:searchvinyls.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -118,16 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0B82F6DD1AE0286D00EFA198"
-            BuildableName = "searchvinyls.app"
-            BlueprintName = "searchvinyls"
+            BlueprintIdentifier = "0B3093D11AEAC8FF00464B0B"
+            BuildableName = "serverCommunicationTests.xctest"
+            BlueprintName = "serverCommunicationTests"
             ReferencedContainer = "container:searchvinyls.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
