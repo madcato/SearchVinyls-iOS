@@ -20,7 +20,7 @@
 
 - (void)setUp {
     [super setUp];
-    communicator = [[SearchVinylsAPICommunicator alloc] init];
+    communicator = [SearchVinylsAPICommunicator instantiate];
 }
 
 - (void)tearDown {

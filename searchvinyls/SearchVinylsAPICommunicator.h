@@ -29,7 +29,9 @@ typedef void(^ErrorBlock)(NSError* error);
 
 @property (nonatomic, strong) NSArray* responseData;
 
--(void)searchFor:(NSString*)query onSuccess:(CompletionBlock)compBlock onError:(ErrorBlock)errorBlock;
--(void)getMostWanted:(CompletionBlock)compBlock onError:(ErrorBlock)errorBlock;
++ (id)instantiate;
+
+- (void)searchFor:(NSString*)query onSuccess:(CompletionBlock)compBlock onError:(ErrorBlock)errorBlock;
+- (void)getMostWanted:(CompletionBlock)compBlock onError:(ErrorBlock)errorBlock;
 
 @end

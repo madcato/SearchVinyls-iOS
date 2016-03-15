@@ -24,11 +24,13 @@
     [super viewDidLoad];
     
     self.title = @"Results";
-    
+
+#if !(TARGET_OS_SIMULATOR)
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(launchSearch:) forControlEvents:UIControlEventValueChanged];
-    
     [self.refreshControl beginRefreshing];
+#endif
+
     [self.tableView setContentOffset:CGPointMake(0, self.tableView.contentOffset.y-self.refreshControl.frame.size.height) animated:YES];
 
     [self launchSearch:self.refreshControl];
@@ -42,7 +44,7 @@
 
 -(void)launchSearch:(UIRefreshControl*)refreshControl
 {
-    _communicator = [[SearchVinylsAPICommunicator alloc] init];
+    _communicator = [SearchVinylsAPICommunicator instantiate];
     [_communicator searchFor:self.textToSearch onSuccess:^(NSArray* array) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSInteger i = 0;
@@ -58,7 +60,9 @@
                 [rows addObject:[NSIndexPath indexPathForItem:i inSection:0]];
             }
             [self.tableView insertRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationTop];
-            [self.refreshControl endRefreshing];
+            if (self.refreshControl.refreshing) {
+                [self.refreshControl endRefreshing];
+            }
         });
     } onError:^(NSError *error) {
         [self.refreshControl endRefreshing];

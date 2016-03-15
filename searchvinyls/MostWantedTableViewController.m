@@ -22,10 +22,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+#if !(TARGET_OS_SIMULATOR)
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl beginRefreshing];
     [self.refreshControl addTarget:self action:@selector(launchSearch:) forControlEvents:UIControlEventValueChanged];
-    
+#endif
+
     [self launchSearch:self.refreshControl];
 
 }
@@ -41,7 +43,7 @@
 
 -(void)launchSearch:(UIRefreshControl*)refreshControl
 {
-    _communicator = [[SearchVinylsAPICommunicator alloc] init];
+    _communicator = [SearchVinylsAPICommunicator instantiate];
     [_communicator getMostWanted:^(NSArray* array) {
         dispatch_async(dispatch_get_main_queue(), ^{
             NSInteger i = 0;
@@ -57,10 +59,14 @@
                 [rows addObject:[NSIndexPath indexPathForItem:i inSection:0]];
             }
             [self.tableView insertRowsAtIndexPaths:rows withRowAnimation:UITableViewRowAnimationBottom];
-            [self.refreshControl endRefreshing];
+            if (self.refreshControl.refreshing) {
+                [self.refreshControl endRefreshing];
+            }
         });
     } onError:^(NSError *error) {
-        [self.refreshControl endRefreshing];
+        if (self.refreshControl.refreshing) {
+            [self.refreshControl endRefreshing];
+        }
     }];
 }
 

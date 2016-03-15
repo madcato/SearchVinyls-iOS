@@ -7,8 +7,18 @@
 //
 
 #import "SearchVinylsAPICommunicator.h"
+#import "SearchVinylsAPICommunicatorMock.h"
+#include "TargetConditionals.h"
 
 @implementation SearchVinylsAPICommunicator
+
++ (id)instantiate {
+#if !(TARGET_OS_SIMULATOR)
+    return [[SearchVinylsAPICommunicator alloc] init];
+#else
+    return [[SearchVinylsAPICommunicatorMock alloc] init];
+#endif
+}
 
 -(void)searchFor:(NSString*)query onSuccess:(CompletionBlock)compBlock onError:(ErrorBlock)errorBlock {
     fetchedURL = [NSURL URLWithString:[self constructBasePath:SEARCH_METHOD parameters:@{@"c":query}]];

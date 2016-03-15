@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B21437F1C98C28A00DC3F20 /* SearchVinylsAPICommunicatorMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B21437E1C98C28A00DC3F20 /* SearchVinylsAPICommunicatorMock.m */; };
 		0B27DE761AECE93A008FC4B0 /* UIImageView+Downloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B27DE751AECE93A008FC4B0 /* UIImageView+Downloader.m */; };
 		0B3093C81AEAC18300464B0B /* ViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3093C71AEAC18300464B0B /* ViewControllerTests.m */; };
 		0B3093D71AEAC90000464B0B /* serverCommunicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3093D61AEAC90000464B0B /* serverCommunicationTests.m */; };
@@ -25,6 +26,7 @@
 		0B82F70C1AE030E500EFA198 /* SearchVinylsAPICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F70B1AE030E500EFA198 /* SearchVinylsAPICommunicator.m */; };
 		0B82F7141AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F7131AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m */; };
 		0B82F7161AE034D000EFA198 /* SearchVinylsAPICommunicatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F7151AE034D000EFA198 /* SearchVinylsAPICommunicatorTests.m */; };
+		0BFD382D1C9873DB00C596D3 /* searchvinylsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFD382C1C9873DB00C596D3 /* searchvinylsUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,18 @@
 			remoteGlobalIDString = 0B82F6DD1AE0286D00EFA198;
 			remoteInfo = searchvinyls;
 		};
+		0BFD382F1C9873DB00C596D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B82F6D61AE0286D00EFA198 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B82F6DD1AE0286D00EFA198;
+			remoteInfo = searchvinyls;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B21437D1C98C28A00DC3F20 /* SearchVinylsAPICommunicatorMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchVinylsAPICommunicatorMock.h; sourceTree = "<group>"; };
+		0B21437E1C98C28A00DC3F20 /* SearchVinylsAPICommunicatorMock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVinylsAPICommunicatorMock.m; sourceTree = "<group>"; };
 		0B27DE741AECE93A008FC4B0 /* UIImageView+Downloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Downloader.h"; sourceTree = "<group>"; };
 		0B27DE751AECE93A008FC4B0 /* UIImageView+Downloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Downloader.m"; sourceTree = "<group>"; };
 		0B3093C71AEAC18300464B0B /* ViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerTests.m; sourceTree = "<group>"; };
@@ -68,6 +79,9 @@
 		0B82F7121AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InspectableSearchVinylsAPICommunicator.h; sourceTree = "<group>"; };
 		0B82F7131AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InspectableSearchVinylsAPICommunicator.m; sourceTree = "<group>"; };
 		0B82F7151AE034D000EFA198 /* SearchVinylsAPICommunicatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchVinylsAPICommunicatorTests.m; sourceTree = "<group>"; };
+		0BFD382A1C9873DA00C596D3 /* searchvinylsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = searchvinylsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BFD382C1C9873DB00C596D3 /* searchvinylsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchvinylsUITests.swift; sourceTree = "<group>"; };
+		0BFD382E1C9873DB00C596D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +100,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0B82F6F41AE0286D00EFA198 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BFD38271C9873DA00C596D3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -118,6 +139,7 @@
 				0B82F6E01AE0286D00EFA198 /* searchvinyls */,
 				0B82F6FA1AE0286D00EFA198 /* searchvinylsTests */,
 				0B3093D31AEAC8FF00464B0B /* serverCommunicationTests */,
+				0BFD382B1C9873DB00C596D3 /* searchvinylsUITests */,
 				0B82F6DF1AE0286D00EFA198 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,6 +150,7 @@
 				0B82F6DE1AE0286D00EFA198 /* searchvinyls.app */,
 				0B82F6F71AE0286D00EFA198 /* searchvinylsTests.xctest */,
 				0B3093D21AEAC8FF00464B0B /* serverCommunicationTests.xctest */,
+				0BFD382A1C9873DA00C596D3 /* searchvinylsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +205,8 @@
 			children = (
 				0B82F70A1AE030E500EFA198 /* SearchVinylsAPICommunicator.h */,
 				0B82F70B1AE030E500EFA198 /* SearchVinylsAPICommunicator.m */,
+				0B21437D1C98C28A00DC3F20 /* SearchVinylsAPICommunicatorMock.h */,
+				0B21437E1C98C28A00DC3F20 /* SearchVinylsAPICommunicatorMock.m */,
 				0B27DE741AECE93A008FC4B0 /* UIImageView+Downloader.h */,
 				0B27DE751AECE93A008FC4B0 /* UIImageView+Downloader.m */,
 			);
@@ -217,6 +242,15 @@
 				0B82F7131AE034A900EFA198 /* InspectableSearchVinylsAPICommunicator.m */,
 			);
 			name = Inspectables;
+			sourceTree = "<group>";
+		};
+		0BFD382B1C9873DB00C596D3 /* searchvinylsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0BFD382C1C9873DB00C596D3 /* searchvinylsUITests.swift */,
+				0BFD382E1C9873DB00C596D3 /* Info.plist */,
+			);
+			path = searchvinylsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,13 +308,32 @@
 			productReference = 0B82F6F71AE0286D00EFA198 /* searchvinylsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		0BFD38291C9873DA00C596D3 /* searchvinylsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BFD38311C9873DB00C596D3 /* Build configuration list for PBXNativeTarget "searchvinylsUITests" */;
+			buildPhases = (
+				0BFD38261C9873DA00C596D3 /* Sources */,
+				0BFD38271C9873DA00C596D3 /* Frameworks */,
+				0BFD38281C9873DA00C596D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BFD38301C9873DB00C596D3 /* PBXTargetDependency */,
+			);
+			name = searchvinylsUITests;
+			productName = searchvinylsUITests;
+			productReference = 0BFD382A1C9873DA00C596D3 /* searchvinylsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0B82F6D61AE0286D00EFA198 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = veladan;
 				TargetAttributes = {
 					0B3093D11AEAC8FF00464B0B = {
@@ -291,6 +344,11 @@
 					};
 					0B82F6F61AE0286D00EFA198 = {
 						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 0B82F6DD1AE0286D00EFA198;
+					};
+					0BFD38291C9873DA00C596D3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = TW65EXAM4U;
 						TestTargetID = 0B82F6DD1AE0286D00EFA198;
 					};
 				};
@@ -311,6 +369,7 @@
 				0B82F6DD1AE0286D00EFA198 /* searchvinyls */,
 				0B82F6F61AE0286D00EFA198 /* searchvinylsTests */,
 				0B3093D11AEAC8FF00464B0B /* serverCommunicationTests */,
+				0BFD38291C9873DA00C596D3 /* searchvinylsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -340,6 +399,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BFD38281C9873DA00C596D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -363,6 +429,7 @@
 				0B3093E01AECD79400464B0B /* ResultsCell.m in Sources */,
 				0B6AAAB01AE5747500100311 /* ResultsTableViewController.m in Sources */,
 				0B82F70C1AE030E500EFA198 /* SearchVinylsAPICommunicator.m in Sources */,
+				0B21437F1C98C28A00DC3F20 /* SearchVinylsAPICommunicatorMock.m in Sources */,
 				0B6AAAAD1AE5689700100311 /* MostWantedTableViewController.m in Sources */,
 				0B82F6E41AE0286D00EFA198 /* main.m in Sources */,
 			);
@@ -379,6 +446,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0BFD38261C9873DA00C596D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BFD382D1C9873DB00C596D3 /* searchvinylsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -386,6 +461,11 @@
 			isa = PBXTargetDependency;
 			target = 0B82F6DD1AE0286D00EFA198 /* searchvinyls */;
 			targetProxy = 0B82F6F81AE0286D00EFA198 /* PBXContainerItemProxy */;
+		};
+		0BFD38301C9873DB00C596D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B82F6DD1AE0286D00EFA198 /* searchvinyls */;
+			targetProxy = 0BFD382F1C9873DB00C596D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,16 +492,14 @@
 		0B3093D91AEAC90000464B0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = serverCommunicationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -429,12 +507,10 @@
 		0B3093DA1AEAC90000464B0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = serverCommunicationTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -460,6 +536,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -538,6 +615,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -562,6 +640,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b5303aca-08f0-49f6-839a-b690a0275fe9";
 			};
@@ -571,16 +650,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = searchvinylsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/searchvinyls.app/searchvinyls";
 			};
@@ -590,14 +667,46 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = searchvinylsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.veladan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/searchvinyls.app/searchvinyls";
+			};
+			name = Release;
+		};
+		0BFD38321C9873DB00C596D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = searchvinylsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.searchvinylsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = searchvinyls;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		0BFD38331C9873DB00C596D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = searchvinylsUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.veladan.searchvinylsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TEST_TARGET_NAME = searchvinyls;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -636,6 +745,15 @@
 			buildConfigurations = (
 				0B82F7051AE0286D00EFA198 /* Debug */,
 				0B82F7061AE0286D00EFA198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BFD38311C9873DB00C596D3 /* Build configuration list for PBXNativeTarget "searchvinylsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BFD38321C9873DB00C596D3 /* Debug */,
+				0BFD38331C9873DB00C596D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
