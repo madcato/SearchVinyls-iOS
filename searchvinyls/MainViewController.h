@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  searchvinyls
 //
 //  Created by Daniel Vela on 16/04/15.
@@ -10,7 +10,7 @@
 
 @class MostWantedTableViewController;
 
-@interface ViewController : UIViewController <UITextFieldDelegate> {
+@interface MainViewController : UIViewController <UITextFieldDelegate> {
 @protected
     MostWantedTableViewController* _mostWantedController;
 }

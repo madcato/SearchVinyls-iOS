@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "ViewController.h"
+#import "MainViewController.h"
 #import "AppDelegate.h"
 @import ObjectiveC;
 
 @interface ViewControllerTests : XCTestCase {
-    ViewController* controller;
+    MainViewController* controller;
 }
 
 @end
@@ -22,7 +22,7 @@
 
 - (void)setUp {
     [super setUp];
-    controller = [[ViewController alloc] init];
+    controller = [[MainViewController alloc] init];
 }
 
 - (void)tearDown {

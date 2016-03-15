@@ -1,23 +1,23 @@
 //
-//  ViewController.m
+//  MainViewController.m
 //  searchvinyls
 //
 //  Created by Daniel Vela on 16/04/15.
 //  Copyright (c) 2015 veladan. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainViewController.h"
 #import "MostWantedTableViewController.h"
 #import "ResultsTableViewController.h"
 
-@interface ViewController ()
+@interface MainViewController ()
 
 @property (strong, nonatomic) IBOutlet UITextField *inputField;
 @property (strong, nonatomic) IBOutlet UIView *positionForTV;
 
 @end
 
-@implementation ViewController
+@implementation MainViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -17,7 +17,7 @@
 		0B6AAAB01AE5747500100311 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B6AAAAF1AE5747500100311 /* ResultsTableViewController.m */; };
 		0B82F6E41AE0286D00EFA198 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F6E31AE0286D00EFA198 /* main.m */; };
 		0B82F6E71AE0286D00EFA198 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F6E61AE0286D00EFA198 /* AppDelegate.m */; };
-		0B82F6EA1AE0286D00EFA198 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F6E91AE0286D00EFA198 /* ViewController.m */; };
+		0B82F6EA1AE0286D00EFA198 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B82F6E91AE0286D00EFA198 /* MainViewController.m */; };
 		0B82F6ED1AE0286D00EFA198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B82F6EB1AE0286D00EFA198 /* Main.storyboard */; };
 		0B82F6EF1AE0286D00EFA198 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B82F6EE1AE0286D00EFA198 /* Images.xcassets */; };
 		0B82F6F21AE0286D00EFA198 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B82F6F01AE0286D00EFA198 /* LaunchScreen.xib */; };
@@ -55,8 +55,8 @@
 		0B82F6E31AE0286D00EFA198 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0B82F6E51AE0286D00EFA198 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0B82F6E61AE0286D00EFA198 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0B82F6E81AE0286D00EFA198 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0B82F6E91AE0286D00EFA198 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0B82F6E81AE0286D00EFA198 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0B82F6E91AE0286D00EFA198 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		0B82F6EC1AE0286D00EFA198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B82F6EE1AE0286D00EFA198 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B82F6F11AE0286D00EFA198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -198,8 +198,8 @@
 		0B82F7091AE030A800EFA198 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0B82F6E81AE0286D00EFA198 /* ViewController.h */,
-				0B82F6E91AE0286D00EFA198 /* ViewController.m */,
+				0B82F6E81AE0286D00EFA198 /* MainViewController.h */,
+				0B82F6E91AE0286D00EFA198 /* MainViewController.m */,
 				0B6AAAAB1AE5689700100311 /* MostWantedTableViewController.h */,
 				0B6AAAAC1AE5689700100311 /* MostWantedTableViewController.m */,
 				0B6AAAAE1AE5747500100311 /* ResultsTableViewController.h */,
@@ -357,7 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B82F6EA1AE0286D00EFA198 /* ViewController.m in Sources */,
+				0B82F6EA1AE0286D00EFA198 /* MainViewController.m in Sources */,
 				0B27DE761AECE93A008FC4B0 /* UIImageView+Downloader.m in Sources */,
 				0B82F6E71AE0286D00EFA198 /* AppDelegate.m in Sources */,
 				0B3093E01AECD79400464B0B /* ResultsCell.m in Sources */,
