@@ -94,7 +94,10 @@
     cell.label.text = _results[indexPath.row][@"title"];
     
     cell.image.tag = indexPath.row;
-    [cell.image setImageFrom:_results[indexPath.row][@"image"] withTag:cell.image.tag];
+    NSString* urlString = _results[indexPath.row][@"image"];
+    if (![urlString isEqual:[NSNull null]]) {
+        [cell.image setImageFrom:urlString withTag:cell.image.tag];
+    }
 
     return cell;
 }
