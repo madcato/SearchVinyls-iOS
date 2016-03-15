@@ -33,11 +33,7 @@
 {
     [super viewDidAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-    [UIView animateWithDuration:0.8 animations:^{
-        self.inputField.alpha = 1.0;
-    } completion:^(BOOL finished) {
-        self.inputField.alpha = 1.0;
-    }];
+    [self animateInputField];
     
     if (_mostWantedController == nil) {
         _mostWantedController = [self.storyboard instantiateViewControllerWithIdentifier:@"MostWantedTableViewController"];
@@ -51,7 +47,14 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)animateInputField {
+    [UIView animateWithDuration:0.8 animations:^{
+        self.inputField.alpha = 1.0;
+    } completion:^(BOOL finished) {
+        self.inputField.alpha = 1.0;
+    }];
 }
 
 #pragma mark - UITextField delegate
